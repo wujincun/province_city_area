@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label for=""><span class='red'>*</span>所在地：</label>
+　　<select name="province"></select>　　<!--省-->
+　　<select name="city"></select>　　　　 <!--市-->
+　　<select name="area"></select>　　　　 <!--区-->
+<script src="jquery.js"></script>
+<script src="PCASClass.js"></script>
+<script>
+    var province = '北京';
+    var city = "{$user.location.1}";
+    var area = "{$user.location.2}";
+    new PCAS("province","city","area",province,city,area);
+</script>
+</body>
+</html>
